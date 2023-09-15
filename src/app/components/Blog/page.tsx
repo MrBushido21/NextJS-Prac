@@ -2,7 +2,7 @@ import Link from "next/link";
 import HeaderPage from "../Header/page";
 
 async function getData() {
-    const response = await fetch("https://jsonplaceholder.typicode.com/post", {
+    const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
         next: {
             revalidate: 60,
         },
